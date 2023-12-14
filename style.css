@@ -1,0 +1,145 @@
+.modal {
+    border-radius: 40px;
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    margin: 10px auto; /* Centra el modal horizontalmente */
+}
+
+.fn {
+    border-radius: 60px;
+    float: right;
+    margin: 10px;
+}
+
+.header {
+    position: relative; /* Añade esta línea */
+    z-index: 2; /* Añade esta línea para asegurar que el encabezado esté sobre otros elementos */
+    margin-top: 10px;
+    border-radius: 100px;
+    width: 70%;
+    height: 11%;
+    color: black;
+    background-color: rgb(189, 72, 72);
+    transition: color 2s ease, height 2s ease, width 2s ease, background-color 2s ease;
+    overflow: hidden;
+}
+
+.header:hover {
+    width: 99%;
+    height: 16%;
+    color: white;
+    background-color: rgb(255, 162, 111); /* Agregué el color de fondo aquí para mantenerlo constante al hacer hover */
+}
+
+/* Agrega un estilo para mantener la altura constante al hacer hover */
+.modal-open .header {
+    height: 11%;
+}
+
+.header b span:nth-child(1) {
+    display: block;
+    font-size: 40px; /* Tamaño de fuente inicial para el primer span */
+    font-family: 'Courier New', Courier, monospace;
+    transition: font-size 2s ease, font-family 2s ease;
+}
+
+.header:hover b span:nth-child(1) {
+    font-size: 50px; /* Tamaño de fuente al hacer hover para el primer span */
+}
+
+.FootManualGR
+{
+    bottom: 0;
+    background-color: gray;
+    float: none;
+    position: fixed;
+}
+
+.btn_secondary
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family:'Kdam Thmor Pro', sans-serif;
+    text-shadow: 15px 5px 10px black;
+    color: white;
+    background-color: gray;
+    height: 40px;
+    font-size: 20px;
+    transition:height 0.3s ease, backgroud-color 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+.btn_secondary:hover
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family:'Kdam Thmor Pro', sans-serif;
+    font-size: 35px;
+    text-shadow: 15px 5px 10px black;
+    height: 65px;
+    background-color: lightgray;
+    color: black;
+}
+
+#status, #NOObjects
+{
+    border-radius: 10px;
+    font-size: 20px;
+
+    transition: font-size 0.5s ease, border-radius 0.5s ease;
+}
+
+#status:hover, #NOObjects:hover
+{
+    border-radius: 60px;
+    font-size: 30px;
+}
+
+.bs
+{
+    border-radius: 60px;
+    padding: 8px;
+    width: 8%;
+    font-size: 16px;
+    transition: border-radius 0.5s ease, padding 0.5s ease, width 0.5s ease, font-size 0.5s ease;
+}
+
+.bs:hover
+{
+    border-radius: 60px;
+    padding: 10px;
+    width: 20%;
+    font-size: 20px;
+}
+
+Canvas
+{
+    border-radius: 60px;
+    border: 5px ridge black;
+    animation-name: Canvas;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+
+    margin-top: 90px;
+}
+
+@keyframes Canvas
+{
+    from{box-shadow: 5px 5px white;}
+    to{box-shadow: 5px 5px gray;}
+}
+
+#status
+{
+    border-radius: 10px;
+    font-size: 20px;
+    width: 40%;
+
+    transition: font-size 0.5s ease, border-radius 0.5s ease;
+}
+
+#status:hover
+{
+    border-radius: 60px;
+    font-size: 30px;
+}
